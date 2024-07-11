@@ -1,0 +1,127 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#data-container {
+    max-width: 846px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+td {
+    vertical-align: middle;
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+td img:hover {
+    transform: scale(1.1);
+}
+
+/* Button Styles */
+
+.btn-update,.btn-delete {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-update:hover,.btn-delete:hover {
+    background-color: #3e8e41;
+}
+
+.btn-delete {
+    background-color: #ff0000;
+}
+
+.btn-delete:hover {
+    background-color: #cc0000;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    #data-container {
+        #data-container {
+            max-width: 100%; /* Make the container full-width */
+            padding: 20px; /* Add some padding to make it more readable */
+        }
+    }
+    table {
+        font-size: 12px;
+    }
+    th, td {
+        padding: 8px;
+    }
+    td img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    #data-container {
+        max-width: 100%; /* Make the container full-width */
+        padding: 15px; /* Add some padding to make it more readable */
+    }
+    table {
+        font-size: 10px;
+    }
+    th, td {
+        padding: 5px;
+    }
+    td img {
+        width: 40px;
+        height: 40px;
+    }
+}
